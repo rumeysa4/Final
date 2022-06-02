@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Database1ModelStoreContainer" CdmEntityContainer="Database1Entities">
+    <EntitySetMapping Name="Ders">
+      <EntityTypeMapping TypeName="Database1Model.Ders">
+        <MappingFragment StoreEntitySet="Ders">
+          <ScalarProperty Name="dersKredi" ColumnName="dersKredi" />
+          <ScalarProperty Name="dersAdi" ColumnName="dersAdi" />
+          <ScalarProperty Name="dersKodu" ColumnName="dersKodu" />
+          <ScalarProperty Name="dersId" ColumnName="dersId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kayit">
+      <EntityTypeMapping TypeName="Database1Model.Kayit">
+        <MappingFragment StoreEntitySet="Kayit">
+          <ScalarProperty Name="kayitOgrId" ColumnName="kayitOgrId" />
+          <ScalarProperty Name="kayitDersId" ColumnName="kayitDersId" />
+          <ScalarProperty Name="kayitId" ColumnName="kayitId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Odev">
+      <EntityTypeMapping TypeName="Database1Model.Odev">
+        <MappingFragment StoreEntitySet="Odev">
+          <ScalarProperty Name="odevDersId" ColumnName="odevDersId" />
+          <ScalarProperty Name="odevAdi" ColumnName="odevAdi" />
+          <ScalarProperty Name="odevId" ColumnName="odevId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ogrenci">
+      <EntityTypeMapping TypeName="Database1Model.Ogrenci">
+        <MappingFragment StoreEntitySet="Ogrenci">
+          <ScalarProperty Name="ogrFoto" ColumnName="ogrFoto" />
+          <ScalarProperty Name="ogrDogTarih" ColumnName="ogrDogTarih" />
+          <ScalarProperty Name="ogrAdsoyad" ColumnName="ogrAdsoyad" />
+          <ScalarProperty Name="ogrNo" ColumnName="ogrNo" />
+          <ScalarProperty Name="ogrId" ColumnName="ogrId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
